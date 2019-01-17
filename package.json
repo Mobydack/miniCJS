@@ -1,0 +1,22 @@
+{
+  "name": "minicjs",
+  "version": "0.1.0",
+  "description": "Collects an object into as css string",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mobydack/miniCJS.git"
+  },
+  "author": "Mobydack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mobydack/miniCJS/issues"
+  },
+  "homepage": "https://github.com/Mobydack/miniCJS#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
