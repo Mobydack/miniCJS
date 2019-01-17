@@ -1,5 +1,5 @@
 const miniCJS = function compile(CJS) {
-  if ( Object.prototype.toString.call(CJS[rule] === '[object Object]' ) {
+  if ( Object.prototype.toString.call(CJS) !== '[object Object]' ) {
     console.log('Invalid argument');
     return '';
   }
