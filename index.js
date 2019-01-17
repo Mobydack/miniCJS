@@ -4,7 +4,7 @@ const miniCJS = function compile(CJS) {
     const type = Object.prototype.toString.call(CJS[rule]);
     if ( type === '[object Object]' ) {
       css += `${rule}{${compile(CJS[rule])}}`;
-    } else if ( type === '[object Array]' || rule === '__media' ) {
+    } else if ( type === '[object Array]') {
       css += CJS[rule].reduce((acc, el) => acc + compile(el), '');
     } else {
       css += `${rule}:${CJS[rule]};`
