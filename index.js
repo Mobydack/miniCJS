@@ -1,4 +1,8 @@
 const miniCJS = function compile(CJS) {
+  if (Object.prototype.toString.call(CJS[rule]) {
+    console.log('Invalid argument');
+    return '';
+  }
   let css = '';
   for (let rule in CJS) {
     const type = Object.prototype.toString.call(CJS[rule]);
