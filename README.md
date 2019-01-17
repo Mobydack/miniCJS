@@ -1,7 +1,8 @@
 # objectToCss
 Collects an object into a string
 
-## Sample:
+## Base
+### Sample:
 
 ```javascript
 const min = 992;
@@ -16,4 +17,39 @@ const miniJSS = {
 
 const css = compile(miniJSS);
 // return '@media screen and (min-width: 992px) { body { background-color: red;  } }'
+```
+
+## If you neeading duplicate rules
+### Sample:
+
+```javascript
+const CJS = {
+  __media: [
+    {
+       [`@media screen and (min-width: ${min}px)`]: {
+          body: {
+            'background-color': null,
+          }
+        },
+    },
+    {
+      [`@media screen and (min-width: ${min}px)`]: {
+        body: {
+          'background-color': null,
+        }
+      },
+    }
+  ],
+  '*:before': {
+    'border': '2px solid red'
+  } 
+}
+```
+### Special property `__media`
+Defines a property as an array
+
+```javascript
+const CJS = {
+  __media: [...arr]
+}
 ```
