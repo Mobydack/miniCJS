@@ -24,7 +24,7 @@ const css = compile(miniJSS);
 
 ```javascript
 const CJS = {
-  __media: [
+  media: [
     {
        [`@media screen and (min-width: ${min}px)`]: {
           body: {
@@ -43,13 +43,5 @@ const CJS = {
   '*:before': {
     'border': '2px solid red'
   } 
-}
-```
-### Special property `__media`
-Defines a property as an array
-
-```javascript
-const CJS = {
-  __media: [...arr]
 }
 ```
