@@ -1,4 +1,4 @@
-# objectToCss
+# miniCJS
 Collects an object into a string
 
 ## Base
